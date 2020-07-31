@@ -10,8 +10,8 @@ export default class Directory extends Component {
   render() {
     return (
       <div className="directory-menu">
-        {this.state.sections.map((section) => (
-          <MenuItem key={section.id} title={section.title.toUpperCase()} />
+        {this.state.sections.map(({ id, title, imageUrl, size }) => (
+          <MenuItem key={id} title={title} image={imageUrl} size={size} />
         ))}
       </div>
     );
