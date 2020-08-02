@@ -3,7 +3,7 @@ import "./menu-item.styles.scss";
 export const MenuItem = (props) => {
   const { title, image, size } = props;
   return (
-    <div className="menu-item" className={`${size} menu-item`}>
+    <div className={`${size} menu-item`}>
       <div
         className="background"
         style={{ backgroundImage: `url(${image})` }}
